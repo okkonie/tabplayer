@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Media Tab Controller",
   "version": "1.1",
-  "description": "List and control open media tabs from youtube and twitch.",
+  "description": "play/pause open media tabs from youtube and twitch.",
   "permissions": ["tabs", "scripting"],
   "host_permissions": [
     "*://*.youtube.com/*",
@@ -58,7 +58,7 @@
     },
     "toggleTab6": {
       "suggested_key": {
-        "default": "Ctrl+Shift+7"
+        "default": "Ctrl+Shift+6"
       },
       "description": "6th tab"
     },
