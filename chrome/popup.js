@@ -6,7 +6,7 @@ function getFavicon(url) {
 }
 
 async function toggleVideo(tab) {
-  const [result] = await browser.scripting.executeScript({
+  const [result] = await chrome.scripting.executeScript({
     target: { tabId: tab.id, allFrames: true },
     func: () => {
       const media = document.querySelector('video, audio');
@@ -27,7 +27,7 @@ async function toggleVideo(tab) {
 
 async function listMediaTabs() {
   const container = document.getElementById('tabList');
-  const tabs = await browser.tabs.query({
+  const tabs = await chrome.tabs.query({
     url: [
       '*://*.youtube.com/*',
       '*://*.twitch.tv/*',
